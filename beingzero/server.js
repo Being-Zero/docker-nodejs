@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.use('/api', require('./backend/routes/apiRoutes'));
+
 app.listen(port, () => {
 	logger.info(`Example app listening at http://localhost:${port}`)
 })
