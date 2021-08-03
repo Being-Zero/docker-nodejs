@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 var userSchema = new mongoose.Schema({
-    username: { type: String, required:true},
-    roll_number : String,
+    username: { type: String},
+    roll_number : {type: String, required:true},
     email_addresses : [String],
     batches : [String],
 })
