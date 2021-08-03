@@ -49,7 +49,7 @@ module.exports.importData = function(path_to_csv, modelToUse){
 
 
 
-var path_to_csv = path.join(__dirname, "../data/import.csv");
+var path_to_csv = path.join(__dirname, "../import-templates/import.csv");
 module.exports.importData(path_to_csv, userModel);
 
   
